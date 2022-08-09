@@ -29,6 +29,6 @@ years=found_valid_df[found_valid_df["year"]>2010]
 map2=folium.Map(location=[0,0],width="90%",height="90%",zoom_start=1,tiles="Stamen Toner")
 for i in years.index:
     folium.Marker(location=[years.loc[i,"reclat"],years.loc[i,"reclong"]],popup=years.loc[i,"name"]).add_to(map2)
-map2
+print(map2)
 
 
